@@ -3866,6 +3866,7 @@ blockquote:before {
   margin-top: 2px;
 }
 
+/*------------footer-------------*/
 .icon {
   margin: 0 15px;
 }
@@ -3954,5 +3955,64 @@ blockquote:before {
     text-align: center;
     padding-top: 10px;
   }
+}
+
+/*------------porque esan-------------*/
+.porque_esan_title-section {
+  font-size: 20px;
+}
+
+.porque_esan_section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.porque_esan_section-1 {
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  height: 70%;
+  font-size: 20px;
+  margin-right: 400px;
+  margin-top: -55px;
+  font-weight: bold;
+  line-height: 182px;
+  background-color: yellow;
+}
+
+.porque_esan_section-2 {
+  position: relative;
+  z-index: 2;
+  margin-top: -45px;
+  font-weight: bold;
+  margin-left: 500px;
+  padding: 65px;
+  color: white;
+  background-color: #000000;
+  border: 2px solid transparent;
+  -o-border-image: url("../assets/line-borde.png") 30 round;
+     border-image: url("../assets/line-borde.png") 30 round;
+}
+
+.porque_esan_container_mba_de_esan {
+  padding: 100px;
+}
+
+#porque_esan {
+  background-color: #D8D8D8;
+}
+
+.porque_esan_image_mba_de_esan {
+  background-image: url("../assets/img-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

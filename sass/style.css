@@ -3998,8 +3998,8 @@ blockquote:before {
   color: white;
   background-color: #000000;
   border: 2px solid transparent;
-  -o-border-image: url("../assets/line-borde.png") 30 round;
-     border-image: url("../assets/line-borde.png") 30 round;
+  -o-border-image: url("../images/porque_esan/line-borde.png") 30 round;
+     border-image: url("../images/porque_esan/line-borde.png") 30 round;
 }
 
 .porque_esan_container_mba_de_esan {
@@ -4008,11 +4008,5 @@ blockquote:before {
 
 #porque_esan {
   background-color: #D8D8D8;
-}
-
-.porque_esan_image_mba_de_esan {
-  background-image: url("../assets/img-7.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

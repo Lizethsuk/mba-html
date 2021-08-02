@@ -3425,3 +3425,147 @@ blockquote:before {
 #porque_esan{
   background-color : #D8D8D8
 }
+/*------------beneficios-------------*/
+
+#beneficios {
+  background-color: #282022;
+  color: white;
+}
+
+.beneficios_div{
+  background-image: url('../images/beneficios/beneficios-bor.png');
+  height: 2px;
+  width: 500px;
+  opacity: 1  ;
+  margin-left: -250px;
+}
+
+.text-lideres, .text-house{
+  padding-bottom : 27px !important
+}
+ 
+.inter-logo {
+  content: url('../images/beneficios/internet-icon.png');
+  background-repeat:no-repeat
+}
+ 
+.box-icon {
+  content: url('../images/beneficios/box-icon.png');
+  background-repeat:no-repeat
+}
+ 
+.house-icon {
+  content: url('../images/beneficios/house-icon.png');
+  background-repeat:no-repeat
+}
+  
+.world-icon {
+  content: url('../images/beneficios/world-icon.png');
+  background-repeat:no-repeat
+}
+  
+.box-conteiner {
+  background-color: #58595B;
+  padding-left: 30px;
+  border: 2px solid transparent;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-image: url('../images/beneficios/box-border.png') 30 round;
+  // padding-right: 10px;
+
+  .logo {
+    padding-top: 80px;
+    width: 15%;
+    // padding-bottom: 20px;
+  }
+
+  .text {
+    padding-bottom: 20px;
+  }
+}
+.row-beneficios {
+  padding: 60px
+}
+  
+// Se parte - section
+.se_parte_image {
+  content: url('../images/se_parte/img-6.jpg');
+  background-repeat:no-repeat;
+  width: 100%
+}
+#se_parte{
+  background-color: white;
+}  
+.row-se_parte {
+  padding:80px
+}
+  
+.se_parte_title {
+  color: #E4A137;
+  font-size: 20px
+}
+  
+.se_parte_title_second{
+   font-size: 30px
+}
+ 
+.se_parte__div{
+  background-image: url('../images/se_parte/se_parte_div.png');
+  height: 2px;
+  width: 470px;
+  opacity: 1  
+}
+
+.se_parte_text{
+  color: black
+}
+// Porque mba - section
+.row-porque_mba {
+  padding: 60px;
+  color: white;
+  padding-bottom: 100px;
+  padding-top: 100px; 
+
+}
+#porque_mba {
+  background-image: url('../images/porque_mba/pq_esan_background-1.jpg');
+  background-size: cover;
+  position: relative;
+ 
+}
+  
+// carrusel-content
+
+.carrusel-content {
+  background-color: #D8D8D8;
+  color:#58595B;
+  padding-top: 2px;
+}
+.border-content{
+  border-width: 0;
+  border-right: 2px solid;
+  border-image: url('../images/porque_mba/pq_esan_div.png') 0 100%;
+}
+.text-content{ 
+  padding-left: 40px;
+}
+  
+.pq_esan_icon_1 {
+  content: url('../images/porque_mba/pq_esan_icon_1.png');
+  width:35%
+}
+ 
+.pq_esan_icon_2{
+  content: url('../images/porque_mba/pq_esan_icon_2.png');
+  width: 35%
+}
+  
+.pq_esan_icon_3{
+  content: url('../images/porque_mba/pq_esan_icon_3.png');
+  width: 35%
+}
+ 
+.pq_esan_title{
+  font-size: 30px;
+}

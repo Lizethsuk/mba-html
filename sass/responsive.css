@@ -91,9 +91,7 @@ tab device
     height: auto;
   }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
     color: #fff;
-    border-color: #e7015e;
   }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important;
@@ -111,7 +109,6 @@ tab device
     padding: 10px 0;
   }
   .header-transparent .navbar-toggler {
-    background: #e7015e;
     color: #fff;
   }
   .header-transparent .navbar-nav {
@@ -374,9 +371,9 @@ small device /mobile sm and large
     padding: 10px 0;
   }
   .header .navbar-light .navbar-toggler {
-    background: #e7015e;
-    color: #fff;
-    border-color: #e7015e;
+    background: #000000;
+    color: #E4A137;
+    font-size: 50px;
   }
   .header ul.navbar-nav > li > a {
     line-height: 40px !important;
@@ -415,7 +412,6 @@ small device /mobile sm and large
     max-width: 130px;
   }
   .header-transparent .navbar-toggler {
-    background: #e7015e;
     color: #fff;
   }
   .header-transparent .navbar-nav {
@@ -528,12 +524,27 @@ small device /mobile sm and large
   .ts-count-down .countdown .counter-item:nth-of-type(2) b {
     display: none;
   }
+  .hero-area.content-left {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: top center !important;
+  }
   .hero-area.content-left .banner-item {
-    margin: 0;
     min-height: inherit;
+    margin: 92px 0px 0px;
   }
   .hero-area.content-left .banner-item .banner-content-wrap {
-    padding-bottom: 75px;
+    padding-bottom: 5px;
+    padding-top: 90px;
+  }
+  .hero-area.content-left .banner-item .col-resp {
+    padding: 0px !important;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 {
+    padding: 0px;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 .form-group {
+    margin: 10px 25px;
   }
   .hero-speakers .banner-item .banner-content-wrap {
     padding: 160px 0 0;

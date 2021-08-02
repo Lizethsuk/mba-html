@@ -40,9 +40,8 @@
 body,
 p {
     font-family: 'Roboto', sans-serif;
-    line-height: 26px;
-    font-size: 16px;
-    color: #888888;
+    line-height: 24px;
+    font-size: 20px;
 }
 
 h1,
@@ -51,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1c1c24;
+    color: $gray-color;
     font-family: 'Roboto', sans-serif;
 }
 h1,h2 {
@@ -112,19 +111,14 @@ a {
     color: $primary-color;
     @include transition();
 }
-a:hover {
-    text-decoration: none;
-    color:  $primary-color;
-}
+
 a.read-more {
     color: $primary-color;
     font-weight: 700;
 }
-a.read-more:hover {
-    color: #222;
-}
+
 .body-color{
-   background: #161362;
+   background: #000000;
    color: $white-color;
 }
 
@@ -249,11 +243,12 @@ img.pull-right {
    font-weight: 700;
    color: $white-color;
    text-transform: uppercase;
-   background: #ff007a;
+   background: $primary-color;
    height: 50px;
+   width: 100%;
    padding: 0 35px;
    line-height: 50px;
-   @include border-radius(3px);
+   @include border-radius(0px);
    @include transition();
    outline: none;
    text-decoration: none;
@@ -262,11 +257,7 @@ img.pull-right {
       outline: none;
       
    }
-   &:hover{
-      color: $white-color;
-      background: $primary-dark;
-      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
-   }
+  
    &.fill{
       background: transparent;
       padding: 0 25px;
@@ -301,12 +292,15 @@ img.pull-right {
 .section-title,
 .column-title{
    font-size: 36px;
-   font-weight: 800;
-   color: $secondary-color;
+   font-weight: 500;
+   color:  $primary-color;
    position: relative;
    padding-bottom: 30px;
-   margin-bottom: 85px;
+   margin-bottom: 50px;
    margin-left: 20px;
+   line-height: 53px;
+   max-width: 536px;
+   width: 100%;
    &:after{
       @include absolute();
       content: '';
@@ -320,16 +314,7 @@ img.pull-right {
       left: -20px;
    }
    span{
-      display: block;
-      font-size: 14px;
-      font-family: $roboto;
-      font-weight: 400;
-      line-height: 26px;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 1.4px;
-      margin-bottom: 10px;
-      margin-top: -5px;
+      font-size: 50px!important;
 
    }
    &.white{

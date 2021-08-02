@@ -44,15 +44,15 @@
 .header {
    background-color: #000000;
    .navbar {
-      padding: 10px 0;
+      padding: 30px 0;
    }
    .navbar-toggler{
       padding: 8px 12px;
       .navbar-toggler-icon{
          i{
-               color: #fff;
-               font-weight: 700;
-               font-size: 22px;
+               color: #E4A137;
+               font-weight: bolder;
+               font-size: 53px;
          }
       }
    }
@@ -65,14 +65,17 @@
    ul.navbar-nav {
       >li {
          border-right: 2px solid $primary-color;
-         max-width: 137px;
+         max-width: 170px;
          width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
          >a {
-            font-weight: 700;
+            font-weight: 400;
             font-size: 14px;
-            line-height: 78px;
-            text-transform: uppercase;
-            padding: 0 20px;
+            line-height: 15px;
+            padding: 0px;
             display: block;
 
             &:hover {
@@ -94,6 +97,13 @@
                   background: $primary-color;
                }
 
+            }
+         }
+         &.active{
+            .ts-scroll{
+               color: $primary-color!important;
+               font-weight: bold;
+               font-size: 20px;
             }
          }
 
@@ -139,6 +149,9 @@
       top: 0;
       z-index: 2;
       height: auto;
+      .container{
+         max-width: 1420px;
+      }
 
 
       .navbar-brand {
@@ -156,7 +169,10 @@
          >li {
             >a {
                color: $white-color;
-               line-height: 72px;
+               line-height: 15px;
+               text-align: center;
+               font-size: 13px;
+
             }
 
          }
@@ -315,182 +331,8 @@
 .hero-area {
    padding: 0;
 }
-// home-6  
-.banner-6{
-   background-position: top right;
-   background-repeat: no-repeat;
-   background-size: 50vw auto;
-   .banner-item{
-        .banner-content-wrap{
-            .sub-title{
-                font-size: 18px;
-                letter-spacing: -.36px;
-                font-weight: 600;
-                line-height: 18px;
-                color: #161362;
-                margin-bottom: 30px;
-            }
-            .banner-title{
-                font-size: 74px;
-                color: #3b1d82;
-                font-weight: 800;
-                text-transform: initial;
-                line-height: 82px;
-                letter-spacing: -1.48px;
-                margin-bottom: 20px;
-            }
-            .banner-info{
-               display: flex;
-               align-items: center;
-               h3{
-                  margin-bottom: 0;
-                  color: #3b1d82;
-                  font-size: 16px;
-                  font-weight: 500;
-                  padding: 8px 0 0;
-               }
-               .icon{
-                  margin-right: 10px;
-               }
-            }
-            .ts-count-down{
-                margin: 0 0 0 -30px;
-                .counter-item {
-                    span{
-                        font-size: 48px;
-                        font-weight: 900;
-                        line-height: 74px;
-                        color: #3b1d82;
-                    }
-                    .smalltext{
-                        font-size: 12px;
-                        font-weight: 500;
-                        letter-spacing: 0;
-                        color: #999;
-                    }
-                }
-            }
-            .banner-btn{
-                .btn{
-                    border-radius: 50px;
-                    box-shadow: 0 10px 25px 0 rgba(255,5,124,.4);
-                    font-size: 14px;
-                    font-weight: 700;
-                    height: 50px;
-                    line-height: 50px;
-                    &:not(:last-child){
-                        margin-right: 15px;
-                    }
-                    &-ticket{
-                        background: transparent;
-                        color: #00299e;
-                        box-shadow: none;
-                        padding: 0;
-                        &:hover{
-                            box-shadow: none;
-                        }
-                    }
-                }
-            }
-            
-        }
-   }
-   &-alt{
-      padding-bottom: 50px;
-      .banner-item{
-         .banner-content-wrap{
-            padding: 220px 0 30px;
-            .banner-title{
-               margin-bottom: 100px;
-            }
-            .date-item{
-               display: inline-block;
-               border: 3px solid #e7015e;
-               border-radius: 10px;
-               padding: 18px 20px 14px;
-               color: #3b1d82;
-               font-size: 18px;
-               font-weight: 500;
-               margin-bottom: 80px;
-               .event-day {
-                  display: block;
-                  font-size: 36px;
-                  font-weight: 900;
-              }
-            }
-         }
-         .ts-extra-feature{
-            padding: 0 80px;
-            box-shadow: 0 0 84px 0 rgba(0,0,0,.1);
-            .ts-count-down {
-               .counter-item span{
-                  font-size: 28px;
-                  font-weight: 900;
-                  line-height: 30px;
-               
-               }
-            }
-         }
-      }
-   }
-}
-.banner-item {
-   min-height: 850px;
-   color: #fff;
-   @include background-content();
-   -webkit-backface-visibility: hidden;
-   position: relative;
 
-   &:before {
-      // background-image: linear-gradient( 120deg, rgb(50,21,117) 0%, rgb(141,11,147) 51%, rgb(255,0,102) 100%, rgb(255,5,124) 100%);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      content: '';
-   }
-
-
-   .banner-content-wrap {
-      padding: 250px 0 182px;
-      z-index: 1;
-      position: relative;
-
-      .banner-info {
-         font-size: 18px;
-         font-weight: normal;
-         line-height: 24px;
-         margin-bottom: 10px;
-         color: #fff;
-
-      }
-
-      .banner-title {
-         font-size: 64px;
-         font-weight: 800;
-         color: $white-color;
-         text-transform: uppercase;
-         line-height: 74px;
-         margin-bottom: 50px;
-
-      }
-
-      .banner-btn {
-         .btn {
-            height: 55px;
-            line-height: 55px;
-            padding: 0 55px;
-
-            &.fill {
-               padding: 0 25px;
-            }
-         }
-      }
-
-   }
-}
-
++
 
 .banner-img {
    img {
@@ -505,97 +347,6 @@
 // main slider home 3
 .main-slider {
    padding: 0;
-
-   .banner-item {
-      &:before {
-         background: rgba(0, 0, 0, .50);
-      }
-
-      .banner-content-wrap {
-         .title-shap-img {
-            margin: auto auto 25px;
-            max-width: 70px;
-         }
-
-         p.banner-info {
-            font-style: italic;
-            font-size: 20px;
-         }
-
-         h1.banner-title {
-            text-transform: capitalize;
-            margin-bottom: 30px;
-         }
-
-         p.banner-desc {
-            font-size: 18px;
-            font-weight: 500;
-            color: #fff;
-            padding: 0px 180px;
-            margin-bottom: 40px;
-         }
-
-         .banner-btn {
-            .btn {
-               &.fill {
-                  background: $primary-blue;
-                  border-color: $primary-blue;
-                  padding: 0 55px;
-               }
-            }
-         }
-      }
-   }
-
-   .owl-item.active {
-      .banner-item {
-         .banner-content-wrap {
-
-            .title-shap-img,
-            p.banner-info,
-            h1.banner-title,
-            .banner-desc,
-            .banner-btn {
-               -webkit-animation-name: fadeInUpBig;
-               animation-name: fadeInUpBig;
-               -webkit-animation-duration: 1.5s;
-               animation-duration: 1.5s;
-               -webkit-animation-fill-mode: both;
-               animation-fill-mode: both;
-            }
-
-            .title-shap-img {
-               -webkit-animation-duration: 1.5s;
-               animation-duration: 1.5s;
-
-            }
-
-            p.banner-title {
-               -webkit-animation-duration: 2s;
-               animation-duration: 2s;
-
-            }
-
-            h1.banner-title {
-               -webkit-animation-duration: 2.5s;
-               animation-duration: 2.5s;
-
-            }
-
-            p.banner-desc {
-               -webkit-animation-duration: 3s;
-               animation-duration: 3s;
-            }
-
-            .banner-btn {
-               -webkit-animation-duration: 3.5s;
-               animation-duration: 3.5s;
-
-            }
-         }
-      }
-
-   }
 
    .owl-dots {
       @include absolute(absolute, 0, auto);
@@ -622,13 +373,17 @@
 // index 4
 .hero-area.content-left{
    .banner-item{
-      margin: 100px 50px 0;
+      padding: 100px 0px 0px;
+      margin: 92px 50px 0;
       min-height: 650px;
-      height: 97.6vh;
+      height: auto;
       box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
       background-position: top center;
+      display: flex;
+      align-items: center;
       .banner-content-wrap{
          padding: 115px 0;
+         
          .title-shap-img{
             margin-bottom: 20px;
             max-width: 70px;
@@ -636,11 +391,27 @@
          .banner-title{
             text-transform: initial;
             margin-bottom: 20px;
+            color: #FFFFFF;
+            font-size: 49px;
          }
          .banner-info{
             margin-bottom: 35px;
-            font-style: italic;
-            font-size: 20px;
+            font-size: 30px;
+         }
+      }
+      .form-1{
+         background-color: #000000;
+         padding: 120px 68px;
+         max-width: 490px;
+         width: 100%;
+         margin: auto;
+         input{
+            background-color: #232222;
+            border: 1.6px solid $primary-color;
+            color: white;
+         }
+         .form-check{
+            font-size: 14px;
          }
       }
    }
@@ -648,29 +419,11 @@
 @media (min-width: 1400px){
    .hero-area.content-left{
       .banner-item{
-         max-width: 1350px;
+         max-width: 1440px;
          margin-left: auto;
          margin-right: auto;
       }
    }
-}
-.hero-speakers{
-   .banner-item{
-      background-position: top center;
-      background-attachment: fixed;
-      .banner-content-wrap{
-         padding: 320px 0 180px;
-         .banner-info{
-            margin-bottom: 15px;
-            font-size: 20px;
-         }
-         .banner-title{
-            margin-bottom: 40px;
-         }
-      }
-      
-   }
-
 }
 
 // hero form
@@ -927,9 +680,29 @@
    position: relative;
    overflow: hidden;
    background-image: url('../images/hero_area/kv-direct.jpg');
-   height: 100vh;
+   height: auto;
    display: flex;
    align-items: flex-end;
+   .col-one{
+      position: relative;
+      img{
+         position: relative;
+         z-index: 2;
+      }
+   }
+   .col-text{
+      h1{
+         font-size: 120px;
+         line-height: 108px;
+         left: -60px;
+         bottom: -23px;
+         position: absolute;
+         color: rgba(228, 161, 56, 0.17);
+      }
+      .text-direct{
+         margin-bottom: 220px;
+      }
+   }
 }
 
 .ts-speaker {
@@ -1166,77 +939,44 @@
 /*============================
  ts schedule 
  ===========================*/
-.ts-schedule-info {
+.ts-schedule {
    position: relative;
-
-   ul {
-      position: relative;
-      text-align: center;
-      border: none;
-      min-height: 380px;
-
-      li {
-         a {
-            height: 245px;
-            width: 245px;
-            @include border-radius(50%);
-            background-image: linear-gradient(-45deg, rgb(34, 225, 255) 0%, rgb(29, 143, 225) 49%, rgb(98, 94, 177) 100%);
-            background-image: -webkit-linear-gradient(-45deg, rgb(34, 225, 255) 0%, rgb(29, 143, 225) 49%, rgb(98, 94, 177) 100%);
-            background-image: -ms-linear-gradient(-45deg, rgb(34, 225, 255) 0%, rgb(29, 143, 225) 49%, rgb(98, 94, 177) 100%);
-            opacity: 0.502;
-            display: block;
-            @include absolute();
-            z-index: 1;
-            color: $white-color;
-            padding: 100px 0;
-
-            h3 {
-               font-size: 30px;
-               font-weight: 700;
-               color: $white-color;
-               opacity: .5;
+   background-color: #000000;
+   height: auto;
+   padding: 0px;
+   .col-one{
+      max-width: 510px;
+      width: 100%;
+      padding: 120px 0px;
+   }
+   .col-two{
+      background-image: url('../images/hero_area/kv-modalidad.jpg');
+      background-position: 30%;
+      height: 100vh;
+      .box-content{
+         padding: 100px 0px;
+            display: flex;
+            flex-direction: column;
+         .box-mod{
+            background-color: rgba(228, 161, 56, 0.57);
+            height: 300px;
+            width: 450px;
+            padding: 50px 37px;
+            display: flex;
+            flex-direction: row;
+            color: #F0C891;
+            .b-two{
+               h1{
+                  font-size: 85px;
+                  line-height: 85px;
+                  color: #F0C891;
+               }
+               h2{
+                  font-size: 45px;
+                  color: #F0C891;
+               }
             }
-
-            span {
-               text-transform: uppercase;
-               opacity: .5;
-            }
-
-         }
-
-         &:nth-child(1) {
-            a {
-               top: 140px;
-               background-image: linear-gradient(110deg, rgb(252, 96, 118) 0%, rgb(255, 154, 68) 100%);
-            }
-         }
-
-         &:nth-child(2) {
-            a {
-               left: 130px;
-               top: -15px;
-            }
-         }
-
-         &:nth-child(3) {
-            a {
-               top: 100px;
-               left: auto;
-               right: 0;
-               background-image: radial-gradient(50% 50%, circle closest-side, rgb(87, 198, 225) 0%, rgb(180, 159, 218) 0%, rgb(122, 197, 216) 0%, rgb(238, 162, 162) 0%, rgb(177, 175, 240) 0%, rgb(131, 109, 240) 100%);
-            }
-         }
-
-         a.active {
-
-            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.12);
-            opacity: 1;
-            z-index: 2;
-
-            h3,
-            span {
-               opacity: 1;
-            }
+            
          }
       }
    }
@@ -2789,7 +2529,46 @@
 
 .ts-sponsors {
    background-image: url('../images/hero_area/kv-rk.jpg');
-   height: 100vh;
+   height: auto;
+   .col-one{
+      max-width: 510px;
+      width: 100%;
+      padding: 120px 0px;
+   }
+   .rk-box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .white-rk{
+         background-color: #FFFFFF;
+         margin: 0px;
+         max-width: 448px;
+         width: 100%;
+         color: $gray-color;
+         border-bottom: 6px solid transparent;
+         border-image: url('../images/footer/footer-bor.png') 30 30 round;
+         text-align: center;
+         img{
+            margin: 30px auto 35px
+         }
+         p{
+            
+            max-width: 339px;
+            width: 100%;
+            font-weight: 500;
+            color: $gray-color;
+            line-height: 36px;
+            margin-bottom: 15px;
+         }
+         
+      }
+      .space{
+         max-width: 70px;
+         width: 100%;
+      }
+   }
+   
    .sponsor-padding {
       padding-left: 30px;
       padding-right: 30px;

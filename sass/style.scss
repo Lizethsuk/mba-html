@@ -3381,7 +3381,9 @@ blockquote:before {
 
 /*------------porque esan-------------*/
 
-
+.porque_esan_mobile_mba_de_esan{
+  display: none;
+}
 .porque_esan_title-section {
   font-size: 20px;
 }
@@ -3414,6 +3416,19 @@ blockquote:before {
   margin-left: 500px;
   padding: 65px;
   color:white;
+  background-color:#000000;
+  border: 2px solid transparent;
+  border-image: url('../images/porque_esan/line-borde.png') 30 round;
+}
+.porque_esan_section-3 {
+  // background-color: var(--bg-color-button);
+  // position: relative;
+  // z-index: 2;
+  margin-top: 45px;
+  // font-weight: bold;
+  // margin-left: 500px;
+  padding: 15px;
+  // color:white;
   background-color:#000000;
   border: 2px solid transparent;
   border-image: url('../images/porque_esan/line-borde.png') 30 round;
@@ -3487,8 +3502,15 @@ blockquote:before {
 .row-beneficios {
   padding: 60px
 }
+.beneficios-title{
+  font-size: 30px;
+  line-height:1.1;
+}
   
 // Se parte - section
+.title-responsive{
+  display: none;
+}
 .se_parte_image {
   content: url('../images/se_parte/img-6.jpg');
   background-repeat:no-repeat;
@@ -3532,9 +3554,17 @@ blockquote:before {
   background-image: url('../images/porque_mba/pq_esan_background-1.jpg');
   background-size: cover;
   position: relative;
- 
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
   
+.porque_mba_title{
+  font-size: 40px;
+  line-height:0.9;
+}
+.porque_mba_subtitle{
+  font-size: 30px;
+}
 // carrusel-content
 
 .carrusel-content {
@@ -3548,22 +3578,22 @@ blockquote:before {
   border-image: url('../images/porque_mba/pq_esan_div.png') 0 100%;
 }
 .text-content{ 
-  padding-left: 40px;
+  padding-right: 40px;
 }
   
 .pq_esan_icon_1 {
   content: url('../images/porque_mba/pq_esan_icon_1.png');
-  width:35%
+  width:30%
 }
  
 .pq_esan_icon_2{
   content: url('../images/porque_mba/pq_esan_icon_2.png');
-  width: 35%
+  width: 30%
 }
   
 .pq_esan_icon_3{
   content: url('../images/porque_mba/pq_esan_icon_3.png');
-  width: 35%
+  width: 30%
 }
  
 .pq_esan_title{
@@ -3577,4 +3607,86 @@ blockquote:before {
 }
 .owl-theme .owl-dots .owl-dot span{
   background:#58595B !important
+}
+
+.slick-dots li{
+  background: black !important;
+  border-radius: 20px;
+  width:15px !important;
+  height:15px !important;
+}
+
+.slick-dots .slick-active {
+  background: #58595B  !important;
+  border-radius: 20px;
+  width:20px !important;
+  height:20px !important;
+}
+.slick-dots {
+  bottom: 0px !important;
+  padding-top: 60px !important;
+  position: relative !important;
+}
+
+
+@media (max-width: 767px) {
+  // porque esan
+  .porque_esan_container_mba_de_esan{
+    padding: 40px;
+  }
+  .porque_esan_image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .porque_esan_desktop_mba_de_esan{
+    display: none;
+  }
+  .porque_esan_mobile_mba_de_esan{
+    display: block;
+  }
+  .border-content {
+    border-right: 0px solid;
+  }
+  .carrusel-content{
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .text-content{ 
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  // porque mba
+  .row-porque_mba{
+    padding-left:10px;
+    padding: 30px;
+  }
+  .porque_mba_text{
+    padding-top: 30px;
+  }
+  // se parte
+  .row-se_parte{
+    padding: 30px;
+  }
+  .title-desktop{
+    display: none;
+  }
+  .title-responsive{
+    display: block;
+  }
+  .se_parte__div{
+    width: 200px;
+    margin-left: 4px;
+  }
+  .se_parte_content{
+    padding-top:20px
+  }
+
+  // beneficios
+
+  .beneficios_div{
+    display: none;
+  }
+  .row-beneficios{
+    padding: 30px;
+  }
 }

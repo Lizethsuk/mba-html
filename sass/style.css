@@ -536,6 +536,7 @@ img.pull-right {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Robot-regular;
 }
 
 .header ul.navbar-nav > li > a {
@@ -1421,7 +1422,6 @@ img.pull-right {
 .ts-schedule .col-two {
   background-image: url("../images/hero_area/kv-modalidad.jpg");
   background-position: 30%;
-  height: 100vh;
 }
 
 .ts-schedule .col-two .box-content {
@@ -3738,6 +3738,10 @@ blockquote:before {
   text-align: center;
 }
 
+.banner-content-wrap-mobile {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .bv-footer-row {
     padding-right: 25px;
@@ -3747,6 +3751,44 @@ blockquote:before {
 }
 
 @media (max-width: 767px) {
+  .section-title:after, .column-title:after {
+    width: 80%;
+    left: 0px;
+  }
+  .ts-speakers-text {
+    padding: 20px;
+  }
+  .ts-speakers .col-text h1 {
+    left: 20px;
+    font-size: 110px;
+  }
+  .rk-box {
+    display: block !important;
+  }
+  .ts-sponsors-content {
+    padding-right: 15px !important;
+  }
+  .ts-sponsors {
+    background-position: right;
+  }
+  .hero-area.content-left {
+    background-image: url("../images/section-1/section-1-mobile.jpg") !important;
+  }
+  .hero-area.content-left .banner-item .banner-content-wrap {
+    margin-top: -100px;
+  }
+  .banner-content-wrap-desktop {
+    display: none;
+  }
+  .banner-content-wrap-mobile {
+    display: block;
+  }
+  .ts-schedule .col-two .box-content .box-mod {
+    width: auto;
+  }
+  .ts-schedule .col-two .box-content .box-mod .b-two h2 {
+    font-size: 30px;
+  }
   .bv-footer-row {
     padding-right: 20px;
     padding-left: 20px;
@@ -3831,6 +3873,10 @@ blockquote:before {
 
 #porque_esan {
   background-color: #D8D8D8;
+}
+
+.pq_esan_carrousel {
+  margin-left: 40px;
 }
 
 /*------------beneficios-------------*/
@@ -3951,6 +3997,7 @@ blockquote:before {
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: -80px;
 }
 
 .porque_mba_title {
@@ -3962,10 +4009,15 @@ blockquote:before {
   font-size: 30px;
 }
 
+.carrusel-text {
+  padding-top: 40px;
+}
+
 .carrusel-content {
   background-color: #D8D8D8;
   color: #58595B;
   padding-top: 2px;
+  position: initial;
 }
 
 .border-content {
@@ -4028,7 +4080,57 @@ blockquote:before {
   position: relative !important;
 }
 
+.schedules-1-image {
+  margin-top: -40px !important;
+  margin-left: -20px;
+}
+
+.section-title-text {
+  margin-left: 40px;
+}
+
+.schedules-1-image img {
+  max-width: 80%;
+}
+
+.schedules-1-text {
+  margin-right: 70px;
+}
+
+.schedules-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 @media (max-width: 767px) {
+  .schedules-1 {
+    display: block;
+  }
+  .schedules-text-1 {
+    padding-left: 40px;
+  }
+  .schedules-text-2 {
+    text-align: center;
+  }
+  .pq_esan_icon_1, .pq_esan_icon_2, .pq_esan_icon_3 {
+    width: 40%;
+  }
+  #porque_mba {
+    margin-bottom: 0px !important;
+  }
+  .carrusel-text {
+    padding-top: 10px;
+  }
+  .pq_esan_carrousel {
+    margin-left: 0px;
+  }
   .porque_esan_container_mba_de_esan {
     padding: 40px;
   }

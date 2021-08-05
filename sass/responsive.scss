@@ -1,8 +1,36 @@
 /*==========================
 tab rotate 
 ===========================*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+   .ts-sponsors .rk-box .white-rk img{
+      max-width: 210px;
+      margin: 15px auto 15px;
+   }
+   .ts-sponsors .sponsors-logo{
+      margin: 30px 0px 20px;
+   }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
-
+   section, .section-padding{
+      padding:65px 0px
+   }
+   .ts-sponsors .rk-box .space{
+      max-width: 10px;
+   }
+   .ts-sponsors .rk-box .white-rk img{
+      margin: 18px auto 18px;
+   }
+   .ts-sponsors .sponsors-logo{
+      margin: 35px 10px;
+   }
+   .ts-sponsors .rk-box .white-rk p{
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 15px;
+   }
+   .porque_esan_container_mba_de_esan{
+      padding: 100px 20px;
+   }
    // header nav
    .header {
       ul.navbar-nav>li>a {
@@ -100,7 +128,41 @@ tab device
 ===========================*/
 
 @media(min-width: 768px) and (max-width: 991px) {
-
+   .ts-schedule .col-two .box-content{
+      margin: auto;
+   }
+   .porque_esan_container_mba_de_esan{
+      padding: 70px 0px;
+   }
+   .porque_esan_section-2{
+      margin-left: 377px;
+      padding: 40px 30px;
+   }
+   #beneficios{
+      .container{
+         max-width: 800px;
+      }
+   }
+   .box-conteiner{
+      padding: 10px;
+      
+   }
+   .ts-speakers .col-one {
+      display: flex;
+      justify-content: center;
+   }
+   .ts-speakers .col-text h1{
+      left: 2px;
+   }
+   .box-conteiner .text{
+      font-size: 18px;
+   }
+   .row-beneficios{
+      padding: 60px 0px
+   }
+   .beneficios-title{
+      font-size: 40px;
+   }
    .dropdown-menu.show {
       display: block;
    }
@@ -118,6 +180,11 @@ tab device
    .ts-speakers,
    section {
       padding: 60px 0;
+   }
+   .header ul.navbar-nav > li{
+      max-width: none!important;
+         width: 100%;
+         border-right: none;
    }
 
    // header nav
@@ -169,7 +236,7 @@ tab device
       }
 
       .navbar-nav {
-         background: #222;
+         background: #000000;
          padding: 20px 0;
 
          li {
@@ -418,7 +485,15 @@ tab device
          }
       }
    }
-
+   .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .data {
+      text-align: center;
+      padding-top: 10px;
+    }
    /* Contact Page*/
    .single-contact-feature {
       margin-bottom: 30px;
@@ -528,7 +603,6 @@ tab device
 
    //Navigation scroll
    .header .navbar-collapse {
-      max-height: 320px;
       max-width: none;
       overflow: auto;
       float: none !important;
@@ -548,6 +622,13 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+   .ts-speakers .col-text .text-direct{
+      margin-bottom: 120px;
+   }
+   .ts-speakers .col-text h1{
+      bottom: -34px;
+      line-height: 80px;
+   }
 
    .dropdown-menu.show {
       display: block;
@@ -587,7 +668,10 @@ small device /mobile sm and large
       ul.navbar-nav {
          >li {
             >a {
-               line-height: 40px !important;
+               line-height: 20px !important;
+               br{
+                  display: none;
+               }
 
                i {
                   float: right;
@@ -642,17 +726,22 @@ small device /mobile sm and large
 
    .navbar-brand {
       img {
-         max-width: 130px;
+         max-width: 400px;
+         width: 100%;
       }
    }
-
+   .header ul.navbar-nav > li{
+      max-width: none!important;
+         width: 100%;
+         border-right: none;
+         
+   }
    .header-transparent {
       .navbar-toggler {
          color: #fff;
       }
 
       .navbar-nav {
-         background: #222;
          padding: 20px 0;
       }
 
@@ -830,7 +919,9 @@ small device /mobile sm and large
          }
       }
    }
-
+   .header .navbar{
+      padding: 16px 0px;
+   }
    // index 4 hero area
    .hero-area.content-left {
       background-size: contain!important;
@@ -838,18 +929,25 @@ small device /mobile sm and large
       background-position: top center!important;
       .banner-item {
          min-height: inherit;
-         margin: 92px 0px 0px;
+         margin: 106px 0px 0px;
          
 
          .banner-content-wrap {
             padding-bottom: 5px;
-            padding-top: 90px;
+            padding-top: 240px;
+            h1.banner-title{
+               font-size: 46px;
+               line-height: 40px;
+            }
+            p.banner-info{
+               font-size: 25px;
+            }
          }
         
          .col-resp{
             padding: 0px!important;
             .form-1{
-               padding: 0px ;
+               padding: 50px 0px ;
                .form-group{
                   margin: 10px 25px;
                }
@@ -939,6 +1037,18 @@ small device /mobile sm and large
          }
       }
    }
+   .ts-schedule .col-two{
+      background-position: 73%;
+   }
+   .ts-schedule .col-one{
+      padding: 10px 0px 60px;
+   }
+   .ts-sponsors .col-one{
+      padding: 0px 0px 50px;
+      .section-title{
+         padding: 20px 0px 40px;
+      }
+   }
 
    // ts-single-funfact
    .ts-funfact {
@@ -989,9 +1099,11 @@ small device /mobile sm and large
    }
 
    .ts-speakers {
-      padding-bottom: 30px;
+      padding-bottom: 0px;
    }
-
+   #porque_mba{
+      background-image: url('../images/porque_mba/pq_esan_background-2.jpg');
+   }
    .section-title,
    .column-title {
       margin-bottom: 40px;
@@ -1016,7 +1128,10 @@ small device /mobile sm and large
          padding: 60px 45px;
       }
    }
-
+   #se_parte .col-img{
+      padding: 0px;
+   }
+   
    // schedule
    .ts-schedule-info {
       margin-top: 40px;
@@ -1433,7 +1548,6 @@ small device /mobile sm and large
    .header .navbar-collapse {
       max-height: 320px;
       max-width: none;
-      overflow: auto;
       float: none !important;
       width: 100% !important;
       padding: 0px;
@@ -1446,4 +1560,63 @@ small device /mobile sm and large
    }
 
 
+}
+@media (max-width: 480px) {
+   .navbar{
+      justify-content: flex-start;
+      .navbar-brand{
+         img {
+            max-width: 220px;
+            width: 100%;
+         }
+      }
+   }
+   .hero-area.content-left {
+      .banner-item {
+
+         .banner-content-wrap {
+            padding-bottom: 5px;
+            padding-top: 130px;
+            h1.banner-title{
+               font-size: 37px;
+               line-height: 40px;
+               margin-bottom: 5px;
+            }
+            p.banner-info{
+               font-size: 24px;
+            }
+         }
+        
+       
+      }
+   }
+
+}
+@media (max-width: 325px) {
+   .navbar{
+      .navbar-brand{
+         img {
+            max-width: 182px;
+         }
+      }
+   }
+   .hero-area.content-left {
+      .banner-item {
+
+         .banner-content-wrap {
+            padding-bottom: 5px;
+            padding-top: 120px;
+            h1.banner-title{
+               font-size: 29px;
+               line-height: 40px;
+               margin-bottom: 0px;
+            }
+            p.banner-info{
+               font-size: 21px;
+            }
+         }
+        
+       
+      }
+   }
 }

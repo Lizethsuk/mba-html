@@ -47,12 +47,12 @@
       padding: 30px 0;
    }
    .navbar-toggler{
-      padding: 8px 12px;
+      padding: 8px 0px;
       .navbar-toggler-icon{
          i{
                color: #E4A137;
                font-weight: bolder;
-               font-size: 53px;
+               font-size: 49px;
          }
       }
    }
@@ -70,7 +70,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         font-family:Robot-regular;
+         font-family: 'Roboto';
 
          >a {
             font-weight: 400;
@@ -393,11 +393,13 @@
             text-transform: initial;
             margin-bottom: 20px;
             color: #FFFFFF;
-            font-size: 49px;
+            font-size: 65px;
+            font-family: 'Quincy-bold';
          }
          .banner-info{
             margin-bottom: 35px;
-            font-size: 30px;
+            font-size: 44px;
+            font-family: 'Quincy-bold';
          }
       }
       .form-1{
@@ -693,12 +695,13 @@
    }
    .col-text{
       h1{
-         font-size: 120px;
-         line-height: 108px;
-         left: -60px;
-         bottom: -23px;
+         font-size: 170px;
+         line-height: 131px;
+         left: -64px;
+         bottom: -17px;
          position: absolute;
          color: rgba(228, 161, 56, 0.17);
+         font-family: 'Quincy-bold';
       }
       .text-direct{
          margin-bottom: 220px;
@@ -949,6 +952,18 @@
       max-width: 510px;
       width: 100%;
       padding: 120px 0px;
+      .div-title{
+         span{
+            font-size: 60px;
+            font-family: 'Quincy-bold';
+            line-height: 72px;
+
+         }
+         small{
+            font-size: 20px;
+            font-weight: bold;
+         }
+      }
    }
    .col-two{
       background-image: url('../images/hero_area/kv-modalidad.jpg');
@@ -968,13 +983,16 @@
             color: #F0C891;
             .b-two{
                h1{
-                  font-size: 85px;
+                  font-size: 115px;
                   line-height: 85px;
                   color: #F0C891;
+                  font-family: 'Quincy-bold';
+                  margin-bottom: 10px;
                }
                h2{
-                  font-size: 45px;
+                  font-size: 49px;
                   color: #F0C891;
+                  font-family: 'Quincy-bold';
                }
             }
             
@@ -2535,6 +2553,10 @@
       max-width: 510px;
       width: 100%;
       padding: 120px 0px;
+      .section-title{
+         padding: 160px 0px 40px; 
+      }
+      
    }
    .rk-box{
       display: flex;
@@ -2551,21 +2573,22 @@
          border-image: url('../images/footer/footer-bor.png') 30 30 round;
          text-align: center;
          img{
-            margin: 30px auto 35px
+            margin: 30px auto 30px;
+           
          }
          p{
             
-            max-width: 339px;
+            max-width: 342px;
             width: 100%;
             font-weight: 500;
             color: $gray-color;
-            line-height: 36px;
-            margin-bottom: 15px;
+            line-height: 32px;
+            margin-bottom: 32px;
          }
          
       }
       .space{
-         max-width: 70px;
+         max-width: 50px;
          width: 100%;
       }
    }
@@ -3298,7 +3321,10 @@ blockquote:before {
 }
 
 /*------------footer-------------*/
-
+.icon-menu {
+   margin: 0px !important;
+ }
+ 
 .icon {
   margin: 0 15px;
 }
@@ -3380,13 +3406,29 @@ blockquote:before {
 }
 // ranking
   .rk-box{
-    display: block !important
+    display: block !important;
+    padding: 0px 25px;
+    img{
+       max-width: 220px;
+       width: 100%;
+    }
+    p{
+       line-height: 26px!important;
+       font-size: 19px;
+    }
+    
   }  
+  .ts-sponsors .rk-box .white-rk{
+     margin: auto;
+  }
   .ts-sponsors-content{
     padding-right: 15px !important
   }
   .ts-sponsors{
-    background-position: right;
+   background-image: url('../images/hero_area/kv-rk2.jpg') !important;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-color: #A39FA0;
   }
 // section-1
   .hero-area.content-left{
@@ -3431,7 +3473,10 @@ blockquote:before {
   display: none;
 }
 .porque_esan_title-section {
-  font-size: 20px;
+  font-size: 45px;
+  font-family: 'Quincy-bold';
+  line-height: 42px;
+  margin-bottom: 20px;
 }
 
 .porque_esan_section-content {
@@ -3450,7 +3495,6 @@ blockquote:before {
   margin-top: -55px;
   font-weight: bold;
   line-height: 182px;
-  background-color: yellow;
 }
 
 .porque_esan_section-2 {
@@ -3460,7 +3504,7 @@ blockquote:before {
   margin-top: -45px;
   font-weight: bold;
   margin-left: 500px;
-  padding: 65px;
+  padding: 65px 55px;
   color:white;
   background-color:#000000;
   border: 2px solid transparent;
@@ -3494,6 +3538,7 @@ blockquote:before {
 #beneficios {
   background-color: #282022;
   color: white;
+  padding: 55px 0px;
 }
 
 .beneficios_div{
@@ -3546,14 +3591,17 @@ blockquote:before {
 
   .text {
     padding-bottom: 20px;
+    font-family: 'Quincy-bold';
+    font-size: 21px;
   }
 }
 .row-beneficios {
   padding: 60px
 }
 .beneficios-title{
-  font-size: 30px;
-  line-height:1.1;
+  font-size: 45px;
+  line-height: 1;
+  font-family: 'Quincy-bold';
 }
   
 // Se parte - section
@@ -3574,11 +3622,14 @@ blockquote:before {
   
 .se_parte_title {
   color: #E4A137;
-  font-size: 20px
+  font-size: 25px;
+  padding-left: 20px;
+  font-family: 'Quincy-bold';
 }
   
 .se_parte_title_second{
-   font-size: 30px
+   font-size: 45px;
+   line-height: 45px;
 }
  
 .se_parte__div{
@@ -3613,6 +3664,7 @@ blockquote:before {
 .porque_mba_title{
   font-size: 40px;
   line-height:0.9;
+  font-family: 'Quincy-bold';
 }
 .porque_mba_subtitle{
   font-size: 30px;
@@ -3653,9 +3705,13 @@ blockquote:before {
 }
  
 .pq_esan_title{
-  font-size: 30px;
+  font-size: 45px;
+  line-height: 32px;
+  font-family: 'Quincy-bold';
 }
-
+.pq_esan_p{
+   font-size: 21px;
+ }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background:#58595B !important ;
   width:12px;
@@ -3685,16 +3741,42 @@ blockquote:before {
 }
 .schedules-1-image{
   margin-top: -40px !important;
-  margin-left: -20px;
+  margin-left: 15px;
 }
 .section-title-text{
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .schedules-1-image img{
   max-width: 80%;
 }
 .schedules-1-text{
-  margin-right: 70px;
+   margin-right: 59px;
+   p{
+    color: #E2C38F;
+    font-family: 'Quincy-bold';
+    font-size: 36px;
+    span{
+       color: #FFFFFF;
+       font-family: 'Roboto';
+       font-weight: bold;
+       font-size: 20px;
+    }
+   }
+   
+ }
+.schedules-text-1{
+  margin-right: 57px;
+  p{
+   color: #E2C38F;
+   font-family: 'Quincy-bold';
+   span{
+      color: #FFFFFF;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 24px;
+   }
+  }
+  
 }
 .schedules-1{
   display: flex;
@@ -3760,10 +3842,22 @@ blockquote:before {
   }
   .porque_mba_text{
     padding-top: 30px;
+    p{
+       font-size: 20px;
+    }
+  }
+  .porque_esan_section-3{
+     margin-top: 0px;
+  }
+  .box-conteiner .logo{
+     width: 45%;
+  }
+  .box-conteiner{
+   padding-left: 10px;
   }
   // se parte
   .row-se_parte{
-    padding: 30px;
+    padding: 30px 0px;
   }
   .title-desktop{
     display: none;

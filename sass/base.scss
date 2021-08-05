@@ -27,8 +27,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 /* ============================== */
 
-
-
+@font-face {
+   font-family: 'Quincy-black';
+   src:  url("../fonts/Quincy/QuincyCF-Black.otf");  
+   src: url("../fonts/Quincy/QuincyCF-Black.otf") format('truetype');
+ }
+ @font-face {
+   font-family: 'Quincy-bold';
+   src:  url("../fonts/Quincy/QuincyCF-Bold.otf");  
+   src: url("../fonts/Quincy/QuincyCF-Bold.otf") format('truetype');
+ } 
+ @font-face {
+   font-family: 'Myriad';
+   src:  url("../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF");  
+   src: url("../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF") format('truetype');
+ } 
 
 
 
@@ -291,6 +304,7 @@ img.pull-right {
 // default title set
 .section-title,
 .column-title{
+   font-family: 'Quincy-bold';
    font-size: 36px;
    font-weight: 500;
    color:  $primary-color;
@@ -298,7 +312,7 @@ img.pull-right {
    padding-bottom: 30px;
    margin-bottom: 50px;
    margin-left: 20px;
-   line-height: 53px;
+   line-height: 45px;
    max-width: 536px;
    width: 100%;
    &:after{

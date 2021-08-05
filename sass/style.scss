@@ -3750,7 +3750,7 @@ blockquote:before {
   max-width: 80%;
 }
 .schedules-1-text{
-   margin-right: 59px;
+   margin-right: 44px;
    p{
     color: #E2C38F;
     font-family: 'Quincy-bold';
@@ -3765,15 +3765,21 @@ blockquote:before {
    
  }
 .schedules-text-1{
-  margin-right: 57px;
+  margin-right: 0px;
   p{
    color: #E2C38F;
    font-family: 'Quincy-bold';
+   font-size: 17px;
+   padding-right: 5px;
+   margin-left: 19px;
    span{
       color: #FFFFFF;
       font-family: 'Roboto';
       font-weight: bold;
       font-size: 24px;
+   }
+   a{
+      font-size: 18px;
    }
   }
   

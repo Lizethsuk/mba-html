@@ -123,6 +123,10 @@ a {
   -ms-transition: all 0.4s ease;
 }
 
+a:hover {
+  color: #E4A137;
+}
+
 a.read-more {
   color: #E4A137;
   font-weight: 700;

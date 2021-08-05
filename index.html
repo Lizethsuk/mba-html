@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <!-- carousel -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-  
+
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- isotop -->
   <link rel="stylesheet" href="css/isotop.css">
@@ -36,6 +36,9 @@
   <!-- Responsive styles-->
   <link rel="stylesheet" href="sass/responsive.css">
 
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -89,10 +92,23 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 d-flex align-items-end ">
-              <div class="banner-content-wrap">
+              <div class="banner-content-wrap banner-content-wrap-desktop ">
 
                 <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
                   Change your mindset
+
+                </h1>
+                <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+                  Unlock your potential</p>
+
+
+
+              </div>
+
+              <div class="banner-content-wrap banner-content-wrap-mobile">
+
+                <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
+                  Change <br> your mindset
 
                 </h1>
                 <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
@@ -152,8 +168,38 @@
                 Semipresencial <br>
                 de <span class="span-2">ESAN</span>
               </h2>
+              <p class="section-title-text">30 de octubre <br> <span> Fechas de inicio</span></p>
             </div>
+            <div class="section-title ">
+            </div>
+            <div class="schedules-1 schedules-text-1 ">
+              <div>
+                <p>Inversión
+                  <br> <span>S/ xxxxxxx</span>
+                </p>
+              </div>
+              <div>
+                <p>Duración <br> <span>8 semanas en línea 2-4
+                    <br> <span>hrs. a la semana.</span>
+                  </span></p>
 
+              </div>
+            </div>
+            <div class="section-title "></div>
+            <div class="schedules-1 schedules-text-2">
+              <div class="schedules-1-image">
+                <img src="./images/iconos/img-2.png" alt="" class="img-fluid">
+              </div>
+              <div class="schedules-1-text">
+                <p>Lorem Ipsum <br> <span>Lorem ipsum
+
+                  </span></p>
+                <p>
+                  email@example.com <br>
+                  <span> 002-010-66269735</span>
+                </p>
+              </div>
+            </div>
           </div><!-- col end-->
           <div class="col-lg-6 col-two d-flex align-items-center ">
             <div class="box-content">
@@ -202,7 +248,7 @@
               </h2>
             </div>
           </div><!-- col end-->
-          <div class="col-lg-6 pl-0 pr-0 ">
+          <div class="col-lg-6 ts-sponsors-content pl-0 pr-0 ">
             <div class="rk-box">
               <div class="white-rk">
                 <a href="#" class="sponsors-logo">
@@ -235,6 +281,7 @@
               </div>
             </div>
 
+
           </div>
         </div><!-- row end-->
 
@@ -245,17 +292,18 @@
     <section id="ts-speakers" class="ts-speakers">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-one ">
+          <div class="col-lg-6 col-one order-last order-lg-first  order-xl-first ">
             <img src="./images/speakers/director.png" alt="" class="img-fluid">
           </div><!-- col end-->
-          <div class="col-lg-6 col-text  d-flex flex-column justify-content-end ">
+          <div
+            class="col-lg-6 col-text order-first d-flex order-lg-last  order-xl-last flex-column justify-content-end ">
             <div class="text-direct">
               <h2 class="section-title  ">
                 <span>Palabras</span> <br>
                 del director
 
               </h2>
-              <p>
+              <p class="ts-speakers-text">
                 Si buscas un programa que te rete, a nivel profesional y personal,
                 y estás dispuesto a liberar tu potencial, aprender nuevas metodologías
                 y cambiar tu mindset, el MBA Online de ESAN es para ti.
@@ -283,19 +331,23 @@
     <section id="porque_mba" class="">
       <div class="container">
         <div class="row row-porque_mba justify-content-md-center">
-          <div class="col-4">
+          <div class="col-md-6 col-lg-4">
             <div>
-              <p>¿Por qué <br>el MBA <br> Semipresencial <br> de ESAN?</p>
+              <p class="porque_mba_title">¿Por qué <br>el MBA <br>
+                <span class="porque_mba_subtitle"> Semipresencial <br> de ESAN </span>
+              </p>
             </div>
           </div><!-- col end-->
-          <div class="col-6">
-            <div>
+          <div class="col-md-6 col-lg-6">
+            <div class="porque_mba_text">
               <p>
-                secLorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Soluta incidunt veritatis explicabo, in quis eos quidem possimus
-                iure dolore aliquam voluptates quo voluptatibus nostrum
-                aspernatur amet. Quis odio in excepturi.
+                El MBA de ESAN en modalidad online te permitirá
+                acceder a una educación mixta, donde recibirás el 70% de las clases online y el 30% en modalidad
+                presencial.
+
+
               </p>
+              <p>Conoce todo lo que realizarás en el programa. </p>
             </div>
           </div><!-- col end-->
         </div>
@@ -306,56 +358,74 @@
 
     <section class="carrusel-content">
       <div class="container">
-        <div class="row">
+        <div class="row item-slide d-flex justify-content-left">
+
           <div class="col">
-            <div class="owl-carousel owl-theme">
-
-              <div class="item">
-                <p class="text-content  pq_esan_icon_1 "></p>
-                <div class="text-content border-content">
-                  <p class="pq_esan_title">Malla Curricular <br>
-                    Moderna</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-
-
+            <div class="">
+              <p class="text-content  pq_esan_icon_1 "></p>
+              <div class="text-content carrusel-text border-content">
+                <p class="pq_esan_title">Malla Curricular <br>
+                  Moderna</p>
+                <p>
+                  La estructura curricular renovada, responde a las nuevas necesidades del mercado y a aquellas
+                  habilidades que los líderes profesionales deben desarrollar para ser ágiles, ambidiestros que puedan
+                  brindar un crecimiento exponencial en sus organizaciones.
+                </p>
               </div>
-              <div class="item">
-                <p class="text-content  pq_esan_icon_2"></p>
-                <div class="text-content border-content">
-                  <p class="pq_esan_title">International <br>
-                    Week</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
 
 
-              </div>
-              <div class="item">
+            </div>
 
-                <p class="text-content  pq_esan_icon_3"></p>
-                <div class="text-content">
-                  <p class="pq_esan_title">Seminario <br>
-                    Internacional</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-                  </p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="pq_esan_carrousel">
+              <p class="text-content  pq_esan_icon_2"></p>
+              <div class="text-content carrusel-text">
+                <p class="pq_esan_title">International <br>
+                  Week</p>
+                <p>
+                  Accederás a 2 semanas internacionales de manera presencial que se realiza en el campus de ESAN, donde
+                  profesores de diferentes lugares del mundo llegan a Perú para brindar la mejor experiencia
+                  internacional académica del Perú.
+                </p>
+              </div>
 
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="">
+
+              <p class="text-content  pq_esan_icon_3"></p>
+              <div class="text-content carrusel-text border-content">
+                <p class="pq_esan_title">Seminario <br>
+                  Internacional</p>
+                <p>
+                  Realizarás un viaje de inmersión global, de manera obligatoria, con el propósito de vivir una
+                  experiencia in situ de cómo se gestionan los negocios en otros países.
+
+
+                </p>
               </div>
-              <div class="item">
-                <h4>4</h4>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="pq_esan_carrousel">
+
+              <p class="text-content  pq_esan_icon_3"></p>
+              <div class="text-content carrusel-text">
+                <p class="pq_esan_title">Track de<br>
+                  Especialidades</p>
+                <p>
+                  Podrás enfocar tus estudios según la temática de tu interés, nuestro MBA, te permitirá elegir entre
+                  una lista de 11 opciones de especialidades las cuales te permitirá potenciar habilidades en un área
+                  específica.
+
+                </p>
               </div>
-              <div class="item">
-                <h4>5</h4>
-              </div>
-              <div class="item">
-                <h4>6</h4>
-              </div>
+
             </div>
           </div>
         </div>
@@ -368,44 +438,41 @@
     <section id="se_parte" class="ts-pricing p-60">
       <div class="container">
         <div class="row align-items-center row-se_parte">
-          <div class="col-6">
+          <div class="col-md-6 col-lg-6">
             <div class="se_parte_image">
               <!-- <img src="../images/se_parte/img-6.jpg" />  -->
             </div>
           </div>
-          <div class="col-6">
-            <div>
-              <p class="se_parte_title">Se parte del
+          <div class="col-md-6 col-lg-6">
+            <div class="se_parte_content">
+              <p class="se_parte_title title-desktop">Se parte del
                 <br><span class="se_parte_title_second"> MBA Semipresencial</span>
+              </p>
+              <p class="se_parte_title title-responsive">Se parte del
+                <br><span class="se_parte_title_second"> MBA <br> Semipresencial</span>
               </p>
               <hr class="se_parte__div" />
               <p class="se_parte_text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
-                fugiat nesciunt omnis veniam reiciendis dicta blanditiis? Odio
-                fugiat aliquam fugit itaque magni veniam est, veritatis repellat
-                incidunt soluta, ea eaque!
+                Un nuevo perfil profesional, requiere una formación diferente. ¡Sé parte de la nueva generación de
+                líderes que transformarán los negocios!
               </p>
             </div>
           </div>
           <!-- section title end-->
         </div><!-- col end-->
         <!-- row end-->
-
       </div><!-- container end-->
 
     </section>
     <!-- ts pricing end-->
 
-
-
-
     <!-- gallery start -->
     <section id="beneficios" class="">
       <div class="container">
         <div class="row row-beneficios align-items-center">
-          <div class="col-4 ">
+          <div class="col-md-6 col-lg-4 ">
             <div>
-              <p>Beneficios <br> del programa <br> Semipresencial</p>
+              <p class="beneficios-title">Beneficios <br> del programa <br> Semipresencial</p>
               <hr class="beneficios_div" />
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
@@ -413,10 +480,10 @@
               </p>
             </div>
           </div>
-          <div class="col-8 ">
+          <div class="col-md-6 col-lg-8 ">
             <div class="container">
               <div class="row mb-4">
-                <div class="col">
+                <div class="col-md-6 mb-4 col">
                   <div class="box-conteiner">
                     <p class="logo  world-icon"></p>
                     <p class="text">
@@ -424,7 +491,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-md-6  col">
                   <div class="box-conteiner">
                     <p class="logo house-icon"></p>
                     <p class="text text-house">
@@ -434,7 +501,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col-md-6 mb-4 col">
                   <div class="box-conteiner">
                     <p class="logo box-icon"></p>
                     <p class="text text-lideres">
@@ -442,7 +509,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-md-6 col">
                   <div class="box-conteiner">
                     <p class="logo inter-logo"></p>
                     <p class="text">
@@ -455,13 +522,14 @@
           </div>
           <!-- col end-->
         </div>
+
       </div>
       <!-- container end-->
     </section>
     <!-- ts blog start-->
     <section id="porque_esan" class="ts-blog p-60">
       <div class="container porque_esan_container_mba_de_esan">
-        <div class="row">
+        <div class="row porque_esan_desktop_mba_de_esan">
           <div class="col">
             <div class="porque_esan_section-content">
               <div class="porque_esan_section-1 porque_esan_image_mba_de_esan">
@@ -470,16 +538,32 @@
               <div class="porque_esan_section-2">
                 <p class="porque_esan_title-section">¿Por qué un <br> MBA de ESAN?</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo dolor inventore molestias vitae aspernatur!
-                  Temporibus totam impedit dolorem fugit, quidem error fuga
-                  consectetur doloribus suscipit minus commodi recusandae sed
-                  earum? Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.
+                  Estudiar un MBA en ESAN, escuela N°1 en Perú y TOP 5 en Latinoamérica, te permitirá obtener un
+                  elemento diferenciador, multiplicando tu valor profesional en el mercado.
+                  <br> <br>
+                  Es una buena oportunidad para mejorar tus habilidades profesionales, ascender o iniciar tu propia
+                  empresa.
                 </p>
               </div>
             </div>
           </div><!-- col end-->
+        </div>
+        <div class="row porque_esan_mobile_mba_de_esan">
+          <div class="col">
+            <div class="porque_esan_image_mba_de_esan porque_esan_image ">
+              <img src="images/porque_esan/img-7.jpg" />
+            </div>
+            <div class="porque_esan_section-3">
+              <p class="porque_esan_title-section">¿Por qué un MBA de ESAN?</p>
+              <p>
+                Estudiar un MBA en ESAN, escuela N°1 en Perú y TOP 5 en Latinoamérica, te permitirá obtener un elemento
+                diferenciador, multiplicando tu valor profesional en el mercado.
+                <br> <br>
+                Es una buena oportunidad para mejorar tus habilidades profesionales, ascender o iniciar tu propia
+                empresa.
+              </p>
+            </div>
+          </div>
         </div>
       </div><!-- container end-->
       <!-- shap image-->
@@ -579,9 +663,11 @@
 
     <!-- isotop -->
     <script src="js/isotope.pkgd.min.js"></script>
-
+    <script src="js/slick.min.js"></script>
     <!-- Template custom -->
     <script src="js/main.js"></script>
+
+
   </div>
   <!-- Body inner end -->
 </body>

@@ -48,6 +48,60 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+
+@font-face {
+  font-family: 'Cera-medium';
+  src: url("../fonts/Cera/Cera-Medium.ttf");
+  src: url("../fonts/Cera/Cera-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Cera-black';
+  src: url("../fonts/Cera/Cera-Black.ttf");
+  src: url("../fonts/Cera/Cera-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Cera-bold';
+  src: url("../fonts/Cera/Cera-Bold.ttf");
+  src: url("../fonts/Cera/Cera-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Cera-regular';
+  src: url("../fonts/Cera/Cera-Regular.ttf");
+  src: url("../fonts/Cera/Cera-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Cera-regular-italic';
+  src: url("../fonts/Cera/Cera-RegularItalic.ttf");
+  src: url("../fonts/Cera/Cera-RegularItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'quincy-black';
+  src: url("../fonts/Quincy/QuincyCF-Black.otf");
+  src: url("../fonts/Quincy/QuincyCF-Black.otf") format("truetype");
+}
+@font-face {
+  font-family: 'quincy-bold';
+  src: url("../fonts/Quincy/QuincyCF-Bold.otf");
+  src: url("../fonts/Quincy/QuincyCF-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'robot-bold';
+  src: url("../fonts/roboto/Roboto-Bold.ttf");
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Robot-regular';
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+
+
 /* ============================== */
 /* Typography
 ================================================== */

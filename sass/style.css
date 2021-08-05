@@ -4274,9 +4274,11 @@ blockquote:before {
   }
   .box-conteiner .logo {
     width: 45%;
+    max-width: 71px;
   }
   .box-conteiner {
     padding-left: 10px;
+    max-width: 250px;
   }
   .row-se_parte {
     padding: 30px 0px;

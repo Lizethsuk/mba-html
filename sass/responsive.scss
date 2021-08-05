@@ -1562,6 +1562,11 @@ small device /mobile sm and large
 
 }
 @media (max-width: 480px) {
+   #beneficios{
+      .col{
+         padding: 1px;
+      }
+   }
    .navbar{
       justify-content: flex-start;
       .navbar-brand{
@@ -1589,6 +1594,19 @@ small device /mobile sm and large
         
        
       }
+   }
+   .ts-schedule .col-two .box-content .box-mod .b-two h1{
+      font-size: 95px;
+   }
+   .ts-schedule .col-two .box-content{
+      padding: 0px 0px 50px;
+   }
+   .beneficios-title{
+      font-size: 35px;
+   }
+   .se_parte_title_second{
+      font-size: 35px;
+      line-height: 35px;
    }
 
 }

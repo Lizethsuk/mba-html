@@ -1049,6 +1049,9 @@ small device /mobile sm and large
 }
 
 @media (max-width: 480px) {
+  #beneficios .col {
+    padding: 1px;
+  }
   .navbar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1069,6 +1072,19 @@ small device /mobile sm and large
   }
   .hero-area.content-left .banner-item .banner-content-wrap p.banner-info {
     font-size: 24px;
+  }
+  .ts-schedule .col-two .box-content .box-mod .b-two h1 {
+    font-size: 95px;
+  }
+  .ts-schedule .col-two .box-content {
+    padding: 0px 0px 50px;
+  }
+  .beneficios-title {
+    font-size: 35px;
+  }
+  .se_parte_title_second {
+    font-size: 35px;
+    line-height: 35px;
   }
 }
 

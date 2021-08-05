@@ -524,6 +524,14 @@ img.pull-right {
 /*==========================
       header area
 ===========================*/
+.modal p {
+  color: #222222;
+}
+
+.modal .btn {
+  line-height: 15px;
+}
+
 .header {
   background-color: #000000;
 }
@@ -859,6 +867,7 @@ img.pull-right {
   margin-bottom: 35px;
   font-size: 44px;
   font-family: 'Quincy-bold';
+  line-height: 39px;
 }
 
 .hero-area.content-left .banner-item .form-1 {

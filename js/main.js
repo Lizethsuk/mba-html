@@ -25,7 +25,28 @@
 
 jQuery(function ($) {
 
-
+  $('#aceptar-politica-de-proteccion-de-datos').click(function() {
+    $('#acepta_politica_de_privacidad').prop('checked', true);
+    $('#politica-de-proteccion-de-datos').modal('hide');
+   });
+   
+   
+   
+   
+   function getCookie(name) { //Gets the value of traffic_source 
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+   }
+        
+   function addTrafficSourceToForm(){  //injects the traffic_source value to the form
+     var elValorDeLaProcedencia = getCookie("traffic_source");
+     $("#procedencia").val(elValorDeLaProcedencia);
+   }
+   
+   $( "#field10622219" ).blur(function() {
+    addTrafficSourceToForm() //initates the process
+   });
 
   /**-------------------------------------------------
    *Fixed HEader

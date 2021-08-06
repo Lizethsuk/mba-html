@@ -29,6 +29,9 @@ jQuery(function ($) {
     $('#acepta_politica_de_privacidad').prop('checked', true);
     $('#politica-de-proteccion-de-datos').modal('hide');
    });
+   $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+ });
    
    
    

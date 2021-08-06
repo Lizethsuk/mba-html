@@ -90,12 +90,26 @@ tab rotate
   .ts-exp-wrap .ts-exp-content .column-title {
     font-size: 32px;
   }
+  .header.header-transparent .navbar-brand img {
+    max-width: 290px;
+    width: 100%;
+  }
 }
 
 /*==========================
 tab device 
 ===========================*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .pq_esan_title {
+    font-size: 39px;
+  }
+  .pq_esan_p {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .pq_esan_icon_1, .pq_esan_icon_2, .pq_esan_icon_3, .pq_esan_icon_4 {
+    width: 150px;
+  }
   .ts-schedule .col-two .box-content {
     margin: auto;
   }
@@ -273,7 +287,11 @@ tab device
     margin-bottom: 40px;
   }
   .ts-speakers {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+  }
+  .ts-speakers .col-one img {
+    max-width: 380px;
+    width: 100%;
   }
   .speaker-classic .ts-speaker {
     margin-bottom: 40px;
@@ -432,6 +450,11 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+  .ts-sponsors .rk-box .white-rk h2 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
   .ts-speakers .col-text .text-direct {
     margin-bottom: 120px;
   }
@@ -1049,6 +1072,14 @@ small device /mobile sm and large
 }
 
 @media (max-width: 480px) {
+  .ts-sponsors .sponsors-logo {
+    padding: 0 20px;
+  }
+  .ts-sponsors .rk-box .white-rk h2 {
+    font-size: 30.5px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
   #beneficios .col {
     padding: 1px;
   }
@@ -1111,6 +1142,9 @@ small device /mobile sm and large
   }
   .ts-schedule .col-one .div-title span {
     font-size: 42px;
+  }
+  .section-title span, .column-title span {
+    font-size: 40px !important;
   }
 }
 

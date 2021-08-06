@@ -78,7 +78,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         font-family: 'Roboto';
+         font-family: 'Quincy-bold';
 
          >a {
             font-weight: 400;
@@ -180,7 +180,7 @@
                color: $white-color;
                line-height: 15px;
                text-align: center;
-               font-size: 13px;
+               font-size: 13.4px;
 
             }
 
@@ -386,7 +386,6 @@
       margin: 92px 50px 0;
       min-height: 650px;
       height: auto;
-      box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
       background-position: top center;
       display: flex;
       align-items: center;
@@ -977,6 +976,7 @@
    .col-two{
       background-image: url('../images/hero_area/kv-modalidad.jpg');
       background-position: 30%;
+      background-size: cover;
       // height: 100vh;
       .box-content{
          padding: 100px 0px;
@@ -2558,6 +2558,7 @@
 .ts-sponsors {
    background-image: url('../images/hero_area/kv-rk.jpg');
    height: auto;
+   background-size: cover;
    .col-one{
       max-width: 510px;
       width: 100%;
@@ -3700,19 +3701,22 @@ blockquote:before {
   
 .pq_esan_icon_1 {
   content: url('../images/porque_mba/pq_esan_icon_1.png');
-  width:30%
+  width: 160px
 }
  
 .pq_esan_icon_2{
   content: url('../images/porque_mba/pq_esan_icon_2.png');
-  width: 30%
+  width: 160px
 }
   
 .pq_esan_icon_3{
   content: url('../images/porque_mba/pq_esan_icon_3.png');
-  width: 30%
+  width: 160px
 }
- 
+.pq_esan_icon_4{
+   content: url('../images/porque_mba/pq_esan_icon_44.png');
+   width: 160px
+ } 
 .pq_esan_title{
   font-size: 45px;
   line-height: 32px;
@@ -3766,7 +3770,7 @@ blockquote:before {
     font-size: 36px;
     span{
        color: #FFFFFF;
-       font-family: 'Roboto';
+       font-family: 'Quincy-bold';
        font-weight: bold;
        font-size: 20px;
     }
@@ -3783,9 +3787,9 @@ blockquote:before {
    margin-left: 19px;
    span{
       color: #FFFFFF;
-      font-family: 'Roboto';
+      font-family: 'Quincy-black';
       font-weight: bold;
-      font-size: 24px;
+      font-size: 25px;
    }
    a{
       font-size: 18px;
@@ -3797,6 +3801,11 @@ blockquote:before {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.ts-sponsors .rk-box .white-rk h2 {
+   font-family: 'Quincy-bold';
+   font-size: 42px;
+   line-height: 38px;
 }
 @media (max-width: 767px) {
   .schedules-1{
@@ -3811,8 +3820,8 @@ blockquote:before {
   .schedules-text-2{
     text-align: center;
   }
-  .pq_esan_icon_1 , .pq_esan_icon_2 ,.pq_esan_icon_3 {
-    width:40% 
+  .pq_esan_icon_1 , .pq_esan_icon_2 ,.pq_esan_icon_3, .pq_esan_icon_4 {
+    width:150px 
   }
   #porque_mba{
   margin-bottom:0px !important

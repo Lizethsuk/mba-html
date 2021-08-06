@@ -39,12 +39,21 @@
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
 
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTDGS9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTDGS9');</script>
+  <!-- End Google Tag Manager -->
 
 </head>
 
@@ -66,12 +75,12 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item nav-link active"><a class="ts-scroll" href="#home">MBA</a></li>
-              <li class="nav-item nav-link"><a class="ts-scroll" href="#sponsors">Ranking</a></li>
-              <li class="nav-item nav-link"><a class="ts-scroll" href="#about">Palabras de <br>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#sponsors">Rankings</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#ts-speakers">Palabras del <br>
                   Director</a></li>
               <li class="nav-item nav-link"><a class="ts-scroll" href="#porque_mba">¿Por qué el MBA
                   Semipresencial
-                  De ESAN?</a></li>
+                  de ESAN?</a></li>
 
               <li class="nav-item nav-link"><a class="ts-scroll" href="#se_parte">Sé parte del
                   MBA
@@ -88,7 +97,7 @@
 
     <!-- banner start-->
     <section class="hero-area content-left" id="home"
-      style="background-image: url(./images/hero_area/kv.jpg);  background-size: cover; background-position: center;">
+      style="background-image: url(./images/hero_area/kv1.jpg);  background-size: cover; background-position: bottom center;">
       <div class="banner-item ">
         <div class="container-fluid">
           <div class="row">
@@ -120,8 +129,8 @@
               </div>
               <!-- Banner content wrap end -->
             </div><!-- col end-->
-            <div class="col-lg-6 d-flex align-items-center col-resp">
-              <form class="form-1  ">
+            <div class="col-lg-6 d-flex align-items-center col-resp" id="application-root">
+              <form class="form-1" v-on:submit.prevent="sendInformationRequest()">
 
                 <div class="form-group">
                   <input type="text" placeholder="Nombres" name="nombres" id="nombres" required="required"
@@ -136,7 +145,7 @@
                 <div class="form-group"><input type="email" name="correo_electrnico" id="correo_electrnico"
                     placeholder="Email" required="required" class="form-control">
                 </div>
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono"
                     required="required" class="form-control"></div>
                 <div class="form-group"><input type="text" id="empresa" name="empresa" placeholder="Empresa"
                     required="required" class="form-control"></div>
@@ -149,7 +158,11 @@
                         data-target="#politica-de-proteccion-de-datos">condiciones de tratamiento para mis datos
                         personales</a>.
                     </label></div>
-                </div> <button type="submit" class="btn">SOLICITAR INFORMACIÓN</button>
+                </div>
+                <button type="button" class="btn" disabled v-if="sending">
+                  enviando...
+                </button>
+                <button type="submit" class="btn " v-else>SOLICITAR INFORMACIÓN</button>
               </form>
             </div>
           </div><!-- row end-->
@@ -307,7 +320,7 @@
             <div class="text-direct">
               <h2 class="section-title  ">
                 <span>Palabras</span> <br>
-                del director
+                del Director
 
               </h2>
               <p class="ts-speakers-text">
@@ -343,7 +356,7 @@
           <div class="col-md-6 col-lg-6">
             <div class="porque_mba_text">
               <p>
-                El MBA de ESAN en modalidad online te permitirá
+                El MBA de ESAN en modalidad Semipresencial te permitirá
                 acceder a una educación mixta, donde recibirás el 70% de las clases online y el 30% en modalidad
                 presencial.
 
@@ -369,9 +382,8 @@
                 <p class="pq_esan_title">Malla Curricular <br>
                   Moderna</p>
                 <p class="pq_esan_p">
-                  La estructura curricular renovada, responde a las nuevas necesidades del mercado y a aquellas
-                  habilidades que los líderes profesionales deben desarrollar para ser ágiles, ambidiestros que puedan
-                  brindar un crecimiento exponencial en sus organizaciones.
+                  La estructura curricular renovada responde a las nuevas necesidades 
+                  del mercado y a aquellas habilidades que los profesionales deben desarrollar para ser líderes ágiles, ambidiestros que puedan brindar un crecimiento exponencial en sus organizaciones.
                 </p>
               </div>
 
@@ -387,9 +399,8 @@
                 <p class="pq_esan_title">International <br>
                   Week</p>
                 <p class="pq_esan_p">
-                  Accederás a 2 semanas internacionales de manera presencial que se realiza en el campus de ESAN, donde
-                  profesores de diferentes lugares del mundo llegan a Perú para brindar la mejor experiencia
-                  internacional académica del Perú.
+                  Accederás a 2 semanas internacionales que se realizan de manera presencial en el campus de ESAN, donde profesores de 
+                  diferentes lugares del mundo llegan a Perú para brindar la mejor experiencia internacional académica del Perú.
                 </p>
               </div>
 
@@ -404,8 +415,8 @@
                 <p class="pq_esan_title">Seminario <br>
                   Internacional</p>
                 <p class="pq_esan_p">
-                  Realizarás un viaje de inmersión global, de manera obligatoria, con el propósito de vivir una
-                  experiencia in situ de cómo se gestionan los negocios en otros países.
+                  Realizarás un viaje de inmersión global, de manera obligatoria, 
+                  con el propósito de vivir una experiencia in situ de cómo se gestionan los negocios en otros países.
 
 
                 </p>
@@ -416,14 +427,13 @@
           <div class="col">
             <div class="pq_esan_carrousel">
 
-              <p class="text-content  pq_esan_icon_3"></p>
+              <p class="text-content  pq_esan_icon_4"></p>
               <div class="text-content carrusel-text">
                 <p class="pq_esan_title">Track de<br>
                   Especialidades</p>
                 <p class="pq_esan_p">
-                  Podrás enfocar tus estudios según la temática de tu interés, nuestro MBA, te permitirá elegir entre
-                  una lista de 11 opciones de especialidades las cuales te permitirá potenciar habilidades en un área
-                  específica.
+                  Podrás enfocar tus estudios según la temática de tu interés. Nuestro MBA te permitirá elegir entre una 
+                  lista de 11 opciones de especialidades las cuales te permitirán potenciar habilidades en un área específica.
 
                 </p>
               </div>
@@ -455,7 +465,7 @@
               </p>
               <hr class="se_parte__div" />
               <p class="se_parte_text">
-                Un nuevo perfil profesional, requiere una formación diferente. ¡Sé parte de la nueva generación de
+                Un nuevo perfil profesional requiere una formación diferente. ¡Sé parte de la nueva generación de
                 líderes que transformarán los negocios!
               </p>
             </div>
@@ -636,9 +646,7 @@
          <div class="BackTo1">
             <a href="#" class="fa fa-angle-up" ></a>
          </div> -->
-      <div class="BackTo">
-        <a href="#newsletter-form" class="fa fa-angle-up" aria-hidden="true"></a>
-      </div>
+      
       <div class="modal fade" id="politica-de-proteccion-de-datos" tabindex="-1" role="dialog" aria-labelledby="titulo-de-proteccion-de-datos" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -837,7 +845,7 @@
                       console.log(response.data);
                       if (response.data.information_requested) {
                         // Ir a la página de gracias
-                        window.location.href = '../gracias/';
+                        window.location.href = 'https://www.esan.edu.pe/mails/prueba-nativa/2021/mba-online//gracias/';
                         informationRequest.sending = false;
                       } else {
                         

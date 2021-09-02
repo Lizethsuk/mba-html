@@ -148,29 +148,29 @@
                             </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" placeholder="Nombres" name="nombres" id="nombres" required="required"
+                  <input type="text" v-model='payload.nombres' placeholder="Nombres" name="nombres" id="nombres" required="required"
                     class="form-control">
                 </div>
                 <div class="form-group">
-                  <input type="text" name="apellido_paterno" id="apellido_paterno" placeholder="Apellidos"
+                  <input type="text" v-model='payload.apellido_paterno' name="apellido_paterno" id="apellido_paterno" placeholder="Apellidos"
                     required="required" class="form-control">
                 </div>
-                <div class="form-group"><input type="text" name="numero_de_id" id="numero_de_id" placeholder="DNI"
+                <div class="form-group"><input type="text" v-model='payload.numero_de_id' name="numero_de_id" id="numero_de_id" placeholder="DNI"
                     required="required" class="form-control"></div>
-                <div class="form-group"><input type="email" name="correo_electrnico" id="correo_electrnico"
+                <div class="form-group"><input type="email" v-model='payload.correo_electrnico' name="correo_electrnico" id="correo_electrnico"
                     placeholder="Email" required="required" class="form-control">
                 </div>
                 
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono"
+                <div class="form-group"><input type="tel" v-model='payload.telefono' id="telefono" name="telefono" placeholder="Teléfono"
                     required="required" class="form-control"></div>
-                <div class="form-group"><input type="text" id="empresa" name="empresa" placeholder="Empresa"
+                <div class="form-group"><input type="text" v-model='payload.empresa' id="empresa" name="empresa" placeholder="Empresa"
                     required="required" class="form-control"></div>
-                <div class="form-group"><input type="text" id="cargo" name="cargo" placeholder="Cargo"
+                <div class="form-group"><input type="text" id="cargo" v-model='payload.cargo' name="cargo" placeholder="Cargo"
                     required="required" class="form-control"></div>
 
 
                 <div class="form-group">
-                  <div class="form-check"><input type="checkbox" id="acepta_politica_de_privacidad" required="required"
+                  <div class="form-check"><input type="checkbox" v-model='payload.acepta_politica_de_privacidad' id="acepta_politica_de_privacidad" required="required"
                       class="form-check-input"> <label for="gridCheck" class="form-check-label">
                       Acepto las <a href="#politica-de-proteccion-de-datos" data-toggle="modal"
                         data-target="#politica-de-proteccion-de-datos">condiciones de tratamiento para mis datos

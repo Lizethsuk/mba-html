@@ -876,14 +876,23 @@ img.pull-right {
   margin: auto;
 }
 
-.hero-area.content-left .banner-item .form-1 input {
+.hero-area.content-left .banner-item .form-1 input, .hero-area.content-left .banner-item .form-1 select {
   background-color: #232222;
   border: 1.6px solid #E4A137;
-  color: white;
+  color: #232222;
+  border-radius: 3px;
 }
 
 .hero-area.content-left .banner-item .form-1 .form-check {
   font-size: 14px;
+}
+
+.hero-area.content-left .banner-item .form-1 select {
+  color: #6C757C;
+  padding-left: 9px;
+  font-size: 15.9px;
+  height: 45px;
+  width: 100%;
 }
 
 @media (min-width: 1400px) {

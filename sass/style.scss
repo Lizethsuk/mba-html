@@ -416,13 +416,23 @@
          max-width: 490px;
          width: 100%;
          margin: auto;
-         input{
+         input, select{
             background-color: #232222;
             border: 1.6px solid $primary-color;
-            color: white;
+            color: #232222;
+          
+            
+            border-radius: 3px;
          }
          .form-check{
             font-size: 14px;
+         }
+         select{
+            color: #6C757C;
+            padding-left: 9px;
+            font-size: 15.9px;
+            height: 45px;
+            width: 100%;
          }
       }
    }
